@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <style>
+            html, body {
+                margin:0;
+                padding:0;
+                overflow-y: hidden;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            footer {
+                clear: both;
+                position: relative;
+                height: 80px;
+                margin-top: -70px;
+                width: 100%;
+                background-color: #FFDE06;
+            }
+
+            audio::-webkit-media-controls-enclosure {
+                border-radius: 0px;
+                background: none;
+            }
+
+            audio {
+                width: 100%;
+                display: block;
+            }
+
+            #title {
+                padding-left: 25px;
+                font-size: 30px;
+                font-variant-caps: all-petite-caps;
+            }
+
+            #name {
+                padding-left: 10px;
+                color: #515151;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <img src="https://docplayer.org/docs-images/65/52587989/images/3-0.jpg" height = "auto" width = "auto" alt="Map Here" usemap="#mainMap">
+            <map name="mainMap" class="map" id="mainMap">
+                <area class="mainMapArea" id="s-marzahn" title="Lorem ipsum" shape="rect" coords="5, 5, 100, 100" href="#">
+            </map>
+        </center>
+    </body>
+    <footer id="footer">
+        <div id="info"><label id="title">Klicken Sie auf die Karte</label><label id="name"></label></div>
+        <div class="audio" id="audio-wrapper">
+            <audio controls id="audio"></audio>
+        </div>
+    </footer>
+    <script>
+        $('.mainMapArea').tooltip({show: {effect:"none", delay: 0}});
+
+        $('#s-marzahn').on('click', function(event) {
+            event.preventDefault();
+            $('#title').html("S Marzahn");
+            $('#name').html("Malte Lunkeit");
+            $('#audio-wrapper').html('<audio controls id="audio" style="float: left;"><source src="smarzahn.mp3" type="audio/mpeg"></source></audio>');
+            $('#audio').trigger("play");
+        });
+    </script>
+</html>
