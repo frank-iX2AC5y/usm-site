@@ -41,15 +41,23 @@
                 padding-left: 10px;
                 color: #515151;
             }
+
+            .map {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         </style>
     </head>
     <body>
-        <center>
+        <div class="map">
             <img src="https://docplayer.org/docs-images/65/52587989/images/3-0.jpg" height = "auto" width = "auto" alt="Map Here" usemap="#mainMap">
             <map name="mainMap" class="map" id="mainMap">
                 <area class="mainMapArea" id="s-marzahn" title="Lorem ipsum" shape="rect" coords="5, 5, 100, 100" href="#">
             </map>
-        </center>
+        </div>
     </body>
     <footer id="footer">
         <div id="info"><label id="title">Klicken Sie auf die Karte</label><label id="name"></label></div>
