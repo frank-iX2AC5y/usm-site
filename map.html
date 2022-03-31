@@ -69,7 +69,15 @@
     <body>
         <div class="map">
             <img src="background.jpg" id="map-img" width = "90%" alt="Map Here" usemap="#mainMap">
-            <div class="box" id="map-box"><p>hello world</p></div>
+            <div class="box" id="map-box">
+                <iframe 
+                    left="5%" width="90%"
+                    style="border:0"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB69POiA-b8gISRO23cIiTOW6pcvO6om6U&q=Space+Needle,Seattle+WA">
+            </div>
             <map name="mainMap" class="map" id="mainMap">
                 <area class="mainMapArea" id="s-marzahn" title="Lorem ipsum" shape="rect" coords="5, 5, 100, 100" href="#">
             </map>
