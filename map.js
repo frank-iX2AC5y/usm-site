@@ -4,7 +4,8 @@ var tracks = {
         identifier: 0,
         author: "Malte Lunkeit",
         sound: "tracks/smarzahn.mp3",
-        google_maps_place_id: "S+Marzahn"
+        google_maps_place_id: "S+Marzahn",
+        description: "Lorem ipsum dolor sit amet."
     }
 }
 

@@ -22,6 +22,7 @@
                         $("#author").html(track.author);
                         $("#sound").html(sound_tag(track));
                         $("#map").html(maps_tag(track));
+                        $("#description").html(track.description);
 
                         $(document).trigger('track-reload');
                     });
@@ -44,12 +45,17 @@
                             <div class="sb-attr" id="map"></div>
                         </li>
                     </ul>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    <p id="description"></p>
                 </nav>
 
                 <!-- Page Content  -->
                 <div id="content">
-
+                    <div id="map-wrapper">
+                        <img src="maps/map-b1.png" id="map-img" height="950px;" alt="Map Here" usemap="#mainMap">
+                        <map name="mainMap" class="map" id="mainMap">
+                            <area class="mainMapArea" id="s-marzahn" title="Lorem ipsum" shape="rect" coords="5, 5, 100, 100" href="#" alt="">
+                        </map>
+                    </div>
                 </div>
             </div>
         </main>

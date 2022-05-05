@@ -4,6 +4,17 @@
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
+#content {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+#map-wrapper {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 3px;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
@@ -15,6 +26,17 @@ p {
     font-weight: 300;
     line-height: 1.7em;
     color: #999;
+}
+
+#zoom {
+    /* (A) DIMENSIONS */
+    width: 600px;
+    height: 338px;
+
+    /* (B) BACKGROUND IMAGE */
+    background: url("maps/map-2.png");
+    background-position: center;
+    background-size: cover;
 }
 
 a,
