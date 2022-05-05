@@ -1,0 +1,111 @@
+<html lang="de-DE">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <style>
+            html, body {
+                margin:0;
+                padding:0;
+                overflow-y: hidden;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            footer {
+                position:absolute;
+                bottom:0;
+                width:100%;
+                height:10%;
+                background-color: #FFDE06;
+            }
+
+            audio::-webkit-media-controls-enclosure {
+                border-radius: 0;
+                background: none;
+            }
+
+            audio {
+                width: 100%;
+                height: 50%;
+                display: block;
+            }
+
+            #title {
+                padding-left: 25px;
+                font-size: 30px;
+                font-variant-caps: all-petite-caps;
+            }
+
+            #name {
+                padding-left: 10px;
+                color: #515151;
+            }
+
+            .map {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            /*#map-img {
+                height: 100%;
+                width: auto;
+            }*/
+            
+            #map-box {
+                position: absolute;
+                left: 25px;
+                top: 25px;
+                width: 50%;
+                height: 25%;
+                background-color: #FFDE06;
+            }
+            
+            #map-frame {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+        <title>USM | Map</title>
+    </head>
+    <body>
+        <div class="map" style="float: left;">
+            <img src="background.jpg" id="map-img" width = "90%" alt="Map Here" usemap="#mainMap">
+            <div class="box" id="map-box">
+                <iframe id="map-frame"
+                    style="border:0"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB69POiA-b8gISRO23cIiTOW6pcvO6om6U&q=S+Marzahn" ></iframe>
+            </div>
+            <map name="mainMap" class="map" id="mainMap">
+                <area class="mainMapArea" id="s-marzahn" title="Lorem ipsum" alt="Lorem ipsum" shape="rect" coords="5, 5, 100, 100" href="#">
+            </map>
+        </div>
+    </body>
+    <footer id="footer">
+        <div id="info"><label id="title">Klicken Sie auf die Karte</label><label id="name"></label></div>
+        <div class="audio" id="audio-wrapper">
+            <audio controls id="audio"></audio>
+        </div>
+    </footer>
+    <script>
+        $('.mainMapArea').tooltip({show: {effect:"none", delay: 0}});
+
+        $('#s-marzahn').on('click', function(event) {
+            event.preventDefault();
+            $('#title').html("S Marzahn");
+            $('#name').html("Malte Lunkeit");
+            $('#audio-wrapper').html('<audio controls id="audio" style="float: left;"><source src="tracks/smarzahn.mp3" type="audio/mpeg"></audio>');
+            $('#audio').trigger("play");
+        });
+    </script>
+</html>
