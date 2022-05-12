@@ -21,8 +21,10 @@
       </style>
       <script>
           $(document).ready(() => {
-              $(window).on('orientationchange', event => {
-                  window.location = 'map.html';
+              $(window).on('orientationchange resize', event => {
+                  const body = $("body");
+                  if(body.width() > body.height())
+                    window.location = 'map.html';
               });
           });
       </script>
