@@ -17,4 +17,9 @@ $(document).ready(() => {
     $(document).on('track-reload', () => {
         $('#audio').trigger('play');
     });
+
+    const params = new URLSearchParams(window.location.search);
+    if(params.has("track")) {
+        load_track(params.get("track"));
+    }
 });
