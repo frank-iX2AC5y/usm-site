@@ -1,5 +1,5 @@
 const track = (id, callback) => {
-    $.getJSON('tracks/tracks.json', (data) => {
+    $.getJSON('/tracks/tracks.json', (data) => {
         callback(data[id]);
     });
 }

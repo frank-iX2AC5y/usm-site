@@ -34,7 +34,7 @@ p {
     height: 338px;
 
     /* (B) BACKGROUND IMAGE */
-    background: url("maps/map-2.png");
+    background: url("../maps/map-2.png");
     background-position: center;
     background-size: cover;
 }
