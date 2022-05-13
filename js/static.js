@@ -25,3 +25,11 @@ const load_track = (track_id) => {
         $(document).trigger('track-reload');
     });
 };
+
+const tracks = (callback) => {
+    $.getJSON('/tracks/tracks.json', (data) => {
+        $.each(data, (id, value) => {
+            callback(id, value);
+        });
+    });
+};
