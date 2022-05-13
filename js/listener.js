@@ -20,7 +20,7 @@ $(document).ready(() => {
 
     tracks((id, track) => {
         console.log(track);
-        $('#mainMap').append('<area class="mainMapArea" id="track'+id+'" track="'+id+'" title="Lorem ipsum" shape="rect" coords="'+track.dimension.p1.x+', '+track.dimension.p1.y+', '+track.dimension.p2.x+', '+track.dimension.p2.y+'" href="#" alt="">');
+        $('#mainMap').append('<area class="mainMapArea" id="track'+id+'" track="'+id+'" title="'+track.short_description+'" shape="rect" coords="'+track.dimension.p1.x+', '+track.dimension.p1.y+', '+track.dimension.p2.x+', '+track.dimension.p2.y+'" href="#" alt="">');
         $('#track'+id).click((event) => {
             event.preventDefault();
             load_track(event.target.getAttribute("track"));
