@@ -1,9 +1,12 @@
 $(document).ready(() => {
-    if(window.innerHeight > window.innerWidth){
-        window.location = 'portrait.html';
-    }
 
     const params = new URLSearchParams(window.location.search)
+
+    if(window.innerHeight > window.innerWidth)
+        if(params.has("track"))
+            window.location = 'portrait.html?track=' + params.get("track")
+        else
+            window.location = 'portrait.html'
 
     $(window).on('orientationchange resize', event => {
         const body = $("body")
