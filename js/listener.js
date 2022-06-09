@@ -8,7 +8,7 @@ $(document).ready(() => {
         else
             window.location = 'portrait.html'
 
-    $(window).on('orientationchange resize', event => {
+    $(window).on('orientationchange resize', () => {
         const body = $("body")
         if(body.width() < body.height())
             if(params.has("track"))

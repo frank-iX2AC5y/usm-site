@@ -1,0 +1,65 @@
+html, body {
+    background-color: #008c7f;
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    font-family: Lemonmilk, sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #f7ec22;
+    font-family: Helvetica, sans-serif;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+    font-family: Helvetica, sans-serif;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul h4 {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul .sb-attr {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar p {
+    color: #f7ec22;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+audio::-webkit-media-controls-enclosure {
+    border-radius: 0;
+    /*background: #008c7f;*/
+    background: #f7ec22;
+}
