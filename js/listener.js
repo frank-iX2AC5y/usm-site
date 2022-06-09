@@ -3,17 +3,21 @@ $(document).ready(() => {
         window.location = 'portrait.html';
     }
 
+    const params = new URLSearchParams(window.location.search)
+
     $(window).on('orientationchange resize', event => {
-        const body = $("body");
+        const body = $("body")
         if(body.width() < body.height())
-            window.location = 'portrait.html';
+            if(params.has("track"))
+                window.location = 'portrait.html?track=' + params.get("track")
+            else
+                window.location = 'portrait.html'
     });
 
     $(document).on('track-reload', () => {
         $('#audio').trigger('play');
     });
 
-    const params = new URLSearchParams(window.location.search);
     if(params.has("track")) {
         load_track(params.get("track"));
     }

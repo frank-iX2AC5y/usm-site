@@ -23,8 +23,12 @@
           $(document).ready(() => {
               $(window).on('orientationchange resize', event => {
                   const body = $("body");
+                  const params = new URLSearchParams(window.location.search)
                   if(body.width() > body.height())
-                    window.location = 'map.html';
+                      if(params.has("track"))
+                          window.location = 'map.html?track=' + params.get("track")
+                      else
+                          window.location = 'map.html';
               });
           });
       </script>
