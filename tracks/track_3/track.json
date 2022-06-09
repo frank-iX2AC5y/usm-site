@@ -1,17 +1,17 @@
 {
-  "name": "Dissens - Pädagogik und Kunst im Kontext GmbH",
+  "name": "Dissens - Pädagogik und Kunst im Kontext gGmbH",
   "author": "",
   "google_maps_place_id": "Marzahner+Promenade+33,+12679+Berlin",
   "description": "",
   "short_description": "",
   "dimension": {
     "p1": {
-      "x": 0,
-      "y": 0
+      "x": 419,
+      "y": 529
     },
     "p2": {
-      "x": 0,
-      "y": 0
+      "x": 437,
+      "y": 544
     }
   }
 }

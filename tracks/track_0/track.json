@@ -6,12 +6,12 @@
   "short_description": "Lorem ipsum",
   "dimension": {
     "p1": {
-      "x": 0,
-      "y": 0
+      "x": 314,
+      "y": 581
     },
     "p2": {
-      "x": 0,
-      "y": 0
+      "x": 332,
+      "y": 600
     }
   }
 }
