@@ -1,0 +1,17 @@
+{
+  "name": "S Marzahn",
+  "author": "Malte Lunkeit",
+  "google_maps_place_id": "S+Marzahn",
+  "description": "Lorem ipsum dolor sit amet.",
+  "short_description": "Lorem ipsum",
+  "dimension": {
+    "p1": {
+      "x": 210,
+      "y": 430
+    },
+    "p2": {
+      "x": 230,
+      "y": 450
+    }
+  }
+}

@@ -1,20 +1,5 @@
 {
-  "0": {
-    "name": "S Marzahn",
-    "author": "Malte Lunkeit",
-    "sound": "/tracks/smarzahn.mp3",
-    "google_maps_place_id": "S+Marzahn",
-    "description": "Lorem ipsum dolor sit amet.",
-    "short_description": "Lorem ipsum",
-    "dimension": {
-      "p1": {
-        "x": 210,
-        "y": 430
-      },
-      "p2": {
-        "x": 230,
-        "y": 450
-      }
-    }
+  "tracks": {
+    "0": "track_0"
   }
 }
