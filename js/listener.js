@@ -3,11 +3,6 @@ $(document).ready(() => {
         window.location = 'portrait.html';
     }
 
-    $('#s-marzahn').on('click', (event) => {
-        event.preventDefault();
-        load_track(0);
-    });
-
     $(window).on('orientationchange resize', event => {
         const body = $("body");
         if(body.width() < body.height())
@@ -22,4 +17,13 @@ $(document).ready(() => {
     if(params.has("track")) {
         load_track(params.get("track"));
     }
+
+    tracks((id, track) => {
+        console.log(track);
+        $('#mainMap').append('<area class="mainMapArea" id="track'+id+'" track="'+id+'" title="'+track.short_description+'" shape="rect" coords="'+track.dimension.p1.x+', '+track.dimension.p1.y+', '+track.dimension.p2.x+', '+track.dimension.p2.y+'" href="#" alt="">');
+        $('#track'+id).click((event) => {
+            event.preventDefault();
+            load_track(event.target.getAttribute("track"));
+        })
+    });
 });
