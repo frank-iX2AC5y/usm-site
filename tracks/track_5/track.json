@@ -1,17 +1,17 @@
 {
-  "name": "Mark-Twain-Bibliothek",
+  "name": "Eastgate",
   "author": "",
-  "google_maps_place_id": "Bezirkszentralbibliothek+Marzahn-Hellersdorf+\"Mark+Twain\"",
+  "google_maps_place_id": "Eastgate",
   "description": "",
   "short_description": "",
   "dimension": {
     "p1": {
-      "x": 444,
-      "y": 479
+      "x": 366,
+      "y": 548
     },
     "p2": {
-      "x": 457,
-      "y": 497
+      "x": 380,
+      "y": 563
     }
   }
 }

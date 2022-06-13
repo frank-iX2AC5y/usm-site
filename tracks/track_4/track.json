@@ -1,17 +1,17 @@
 {
-  "name": "Freizeitforum",
+  "name": "",
   "author": "",
-  "google_maps_place_id": "Freizeitforum+Marzahn",
+  "google_maps_place_id": "",
   "description": "",
   "short_description": "",
   "dimension": {
     "p1": {
-      "x": 474,
-      "y": 493
+      "x": 0,
+      "y": 0
     },
     "p2": {
-      "x": 491,
-      "y": 511
+      "x": 0,
+      "y": 0
     }
   }
 }

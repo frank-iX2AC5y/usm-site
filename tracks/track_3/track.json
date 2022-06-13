@@ -1,17 +1,17 @@
 {
-  "name": "Dissens - Pädagogik und Kunst im Kontext gGmbH",
+  "name": "Mark-Twain-Bibliothek",
   "author": "",
-  "google_maps_place_id": "Marzahner+Promenade+33,+12679+Berlin",
+  "google_maps_place_id": "Bezirkszentralbibliothek+Marzahn-Hellersdorf+\"Mark+Twain\"",
   "description": "",
   "short_description": "",
   "dimension": {
     "p1": {
-      "x": 419,
-      "y": 529
+      "x": 444,
+      "y": 479
     },
     "p2": {
-      "x": 437,
-      "y": 544
+      "x": 457,
+      "y": 497
     }
   }
 }

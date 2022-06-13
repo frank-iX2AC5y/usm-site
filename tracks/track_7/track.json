@@ -1,17 +1,17 @@
 {
-  "name": "Stadtwerk Marzahn",
-  "author": "",
-  "google_maps_place_id": "Otto-Rosenberg-Straße+6,+12681+Berlin",
-  "description": "",
-  "short_description": "",
+  "name": "S Marzahn",
+  "author": "Malte Lunkeit",
+  "google_maps_place_id": "S+Marzahn",
+  "description": "Lorem ipsum dolor sit amet.",
+  "short_description": "Lorem ipsum",
   "dimension": {
     "p1": {
-      "x": 389,
-      "y": 396
+      "x": 314,
+      "y": 581
     },
     "p2": {
-      "x": 403,
-      "y": 417
+      "x": 332,
+      "y": 600
     }
   }
 }

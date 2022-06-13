@@ -1,17 +1,17 @@
 {
-  "name": "Eastgate",
+  "name": "Marzahner Promenade",
   "author": "",
-  "google_maps_place_id": "Eastgate",
+  "google_maps_place_id": "Marzahner+Promenade+38,+12679+Berlin",
   "description": "",
   "short_description": "",
   "dimension": {
     "p1": {
-      "x": 366,
-      "y": 548
+      "x": 450,
+      "y": 517
     },
     "p2": {
-      "x": 380,
-      "y": 563
+      "x": 467,
+      "y": 528
     }
   }
 }

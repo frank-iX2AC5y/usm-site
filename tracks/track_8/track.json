@@ -1,17 +1,17 @@
 {
-  "name": "Jugendzentrum Treibhaus",
+  "name": "Stadtwerk Marzahn",
   "author": "",
-  "google_maps_place_id": "JFE+TreibHaus",
+  "google_maps_place_id": "Otto-Rosenberg-Straße+6,+12681+Berlin",
   "description": "",
   "short_description": "",
   "dimension": {
     "p1": {
-      "x": 522,
-      "y": 597
+      "x": 389,
+      "y": 396
     },
     "p2": {
-      "x": 536,
-      "y": 616
+      "x": 403,
+      "y": 417
     }
   }
 }

@@ -1,17 +1,17 @@
 {
-  "name": "Eastgate",
+  "name": "Jugendzentrum Eastend (Band)",
   "author": "",
-  "google_maps_place_id": "Eastgate",
+  "google_maps_place_id": "Tangermünder+Str.+127,+12627+Berlin",
   "description": "",
   "short_description": "",
   "dimension": {
     "p1": {
-      "x": 916,
-      "y": 741
+      "x": 996,
+      "y": 623
     },
     "p2": {
-      "x": 934,
-      "y": 760
+      "x": 1008,
+      "y": 637
     }
   }
 }

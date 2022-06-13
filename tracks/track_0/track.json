@@ -1,17 +1,17 @@
 {
-  "name": "S Marzahn",
-  "author": "Malte Lunkeit",
-  "google_maps_place_id": "S+Marzahn",
-  "description": "Lorem ipsum dolor sit amet.",
-  "short_description": "Lorem ipsum",
+  "name": "Dissens - Pädagogik und Kunst im Kontext gGmbH",
+  "author": "",
+  "google_maps_place_id": "Marzahner+Promenade+33,+12679+Berlin",
+  "description": "",
+  "short_description": "",
   "dimension": {
     "p1": {
-      "x": 314,
-      "y": 581
+      "x": 419,
+      "y": 529
     },
     "p2": {
-      "x": 332,
-      "y": 600
+      "x": 437,
+      "y": 544
     }
   }
 }
